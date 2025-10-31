@@ -48,7 +48,8 @@ body{
 }
  
 .indexBanner { 
-    background-image: url('../images/pexels-atypeek-5781917.jpg'); /* Replace with your image path */
+    /*background-image: url('../images/pexels-atypeek-5781917.jpg'); /*Replace with your image path */
+    background-color: gray;
     background-size: cover; /* Ensures the image covers the entire element */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents image repetition */
@@ -58,6 +59,7 @@ body{
     align-items: center; /* Center vertically */
     color: white; /* Set text color for readability */
     text-align: center; /* Center text within the banner */
+    
   
   }
   
@@ -65,9 +67,16 @@ body{
     font-size: 3em; /* Adjust heading size */
   }
 
+/*.indexBanner img {
+
+  filter: brightness(50%);
+
+}*/
+
 .europeBanner {
    
-    background-image: url('../images/pexels-pixabay-161853.jpg'); /* Replace with your image path */
+    /*background-image: url('../images/pexels-pixabay-161853.jpg'); /* Replace with your image path */
+    background-color: gray;
     background-size: cover; /* Ensures the image covers the entire element */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents image repetition */
@@ -88,7 +97,8 @@ body{
 
   .africaBanner {
    
-    background-image: url('../images/pexels-magda-ehlers-pexels-2660262.jpg'); /* Replace with your image path */
+    /*background-image: url('../images/pexels-magda-ehlers-pexels-2660262.jpg'); /* Replace with your image path */
+    background-color: gray;
     background-size: cover; /* Ensures the image covers the entire element */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents image repetition */
@@ -109,7 +119,8 @@ body{
 
   .otherCountriesBanner {
    
-    background-image: url('../images/north-america-67544_640.jpg'); /* Replace with your image path */
+    /*background-image: url('../images/north-america-67544_640.jpg'); /* Replace with your image path */
+    background-color: gray;
     background-size: cover; /* Ensures the image covers the entire element */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents image repetition */
@@ -279,27 +290,44 @@ body{
 
 .skipMain{
 
-   display: block;
-   opacity: 0;
-   text-align: center;
-   padding:10px;
-   margin: 20px 10px;
-
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  padding: 32px 64px;
+  margin: 40px;
 
 }
 
-.skipMain:focus{
+.skipMain:focus-within{
 
-  display:block;
+  position: static;
+  width: auto;
+  height: auto;
   text-align: center;
-  opacity: 1.0;
-  padding:10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+
+}
+
+.skipMain button{
+
   background-color: rgb(1, 101, 189);
   color: white;
+  padding:20px;
+  border: 1px;
+  border-color: rgb(1, 101, 189);
+  font-size: 24px;
+  border-radius: 10px;
+
+
 
 }
+
+
+
+
+
 
 /*.focusSkipToMain{
 
